@@ -26,6 +26,14 @@ const countLetters = phrase => {
     lettersArray[mergedSentance[letter]] +=1;
     //console.log(lettersArray)
   }
+  // for (let i = 0; i < lowerCaseSentence.length; i++) {
+  //   if (!results[lowerCaseSentence[i]]) {
+  //     results[lowerCaseSentence[i]] = [i];
+  //   } else {
+  //     results[lowerCaseSentence[i]].push(i);
+  //   }
+  // }
+  // return results;
 
   return lettersArray
 }
