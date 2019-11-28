@@ -21,14 +21,14 @@ const eqArrays = (arr1, arr2) => {
 };
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function(object1, object2) {
+const eqObjects = function (object1, object2) {
   object1Values = [];
   object1Keys = [];
   object2Values = [];
   object2Keys = [];
   final = {};
   //here you are conveting objects into arrays
-  for (val in object1){
+  for (val in object1) {
     //console.log(val)
     object1Values.push(object1[val])
 
@@ -37,24 +37,24 @@ const eqObjects = function(object1, object2) {
   //console.log("Object 1 keys are",object1Keys)
   //console.log("object 1 values are",object1Values)
 
-  for (val in object2){
+  for (val in object2) {
     object2Values.push(object2[val]);
-    object2Keys.push(val) 
-    
+    object2Keys.push(val)
+
 
   }
   //console.log("Object 2 keys are",object2Keys)
   //console.log("object 2 values are",object2Values)
   //here you compare the length
-  if ((object1Values.length === object2Values.length) && (object1Keys.length === object2Keys.length)){
+  if ((object1Values.length === object2Values.length) && (object1Keys.length === object2Keys.length)) {
     //console.log("both the keys and values arrays for both objects are the same length")
-    for (item in object1Keys){
+    for (item in object1Keys) {
       comparisonKey = object1Keys[item];
       //console.log(comparisonKey)
-//here you start comparing keys and values --> edit to accomdate arrays  
-      if (Array.isArray(object1[comparisonKey])){
+      //here you start comparing keys and values --> edit to accomdate arrays  
+      if (Array.isArray(object1[comparisonKey])) {
         //console.log("This is an array")
-        if(eqArrays(object1[comparisonKey],object2[comparisonKey])){
+        if (eqArrays(object1[comparisonKey], object2[comparisonKey])) {
           //console.log("These arrays are equal")
 
         } else {
@@ -64,13 +64,13 @@ const eqObjects = function(object1, object2) {
       } else {
         //console.log("This is not an array")
 
-      if (object1[comparisonKey] === object2[comparisonKey]){
-        //console.log("the keys and values for both objects match for the key", comparisonKey);
-      } else {
-        //console.log("they have the same length but theyre keys and values dont match")
-        return false;
+        if (object1[comparisonKey] === object2[comparisonKey]) {
+          //console.log("the keys and values for both objects match for the key", comparisonKey);
+        } else {
+          //console.log("they have the same length but theyre keys and values dont match")
+          return false;
+        }
       }
-    }
     }
   } else {
     //console.log("they are not the same length therefore not the same")
