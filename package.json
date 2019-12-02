@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@anisamohamed/lotide",
   "version": "1.0.0",
-  "description": "my library  # lotide",
+  "description": "Anisa Mohamed's library  # lotide",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/AnisaHMohamed/lotide.git"
   },
-  "author": "",
+  "author": "Anisa Mohamed",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnisaHMohamed/lotide/issues"
