@@ -1,8 +1,8 @@
 {
   "name": "@anisamohamed/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Anisa Mohamed's library  # lotide",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
