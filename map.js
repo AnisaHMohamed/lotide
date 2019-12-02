@@ -27,10 +27,6 @@ const assertArraysEqual = (arr1, arr2) => {
 
   }
 }
-
-
-
-
 const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function(array, callback) {
